@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,  #88d9f2,rgb(228, 171, 244));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #b6e5e9;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.form-container{
+    background-color: rgb(242, 245, 208);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+}
+
+.data-container {
+    background-color:  rgb(242, 245, 208);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    width: 100%;
+    max-height: 300px; 
+    overflow-y: scroll; 
+    position: relative;
+}
+
+h2, h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+p{
+    margin: 5px;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-style: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f4f2f4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a7ecee;
+}
+
+
+table {
+    width: 100%;
+   
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background-color: #97b4f3;
+    z-index: 1;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #abd3ed;
+}
+
+td {
+    background-color: rgb(243, 228, 236);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td button {
+    background-color: #94df5e;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+td button.edit {
+    background-color: #609bef;
+}
+td button.delete {
+    background-color: #46aa25;
+}
+
+td button:hover {
+    opacity: 0.7;
+}
